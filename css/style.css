@@ -21,6 +21,7 @@ h1,h2,h3,h4,h5,ul,li,p {
   
   body {
     font-family: "Roboto", sans-serif;
+    padding-top: 80px;
   }
   
   
@@ -43,7 +44,13 @@ h1,h2,h3,h4,h5,ul,li,p {
   /* хедер главной страницы */
   
   .header {
+    position: fixed;
+    width: 100%;
+    min-height: 80px;
+    top: 0;
+    left: 0;
     border-bottom: 1px solid #ECECEC;
+    background-color: var(--main-bg-color)
   }
   .header-page {
     background-color: var(--main-bg-color);
@@ -344,20 +351,73 @@ h1,h2,h3,h4,h5,ul,li,p {
   }
   
   
-  .img-list {
+   .img-list {
     display: flex;
     justify-content: start;
-      
+     /* position:fixed;  */
   } 
   
-  .foto-list:not(:last-child) {
+   .foto-list:not(:last-child) {
     margin-right: 30px;
+  } 
+
+  .product-action {
+    position: relative;
+    top: 0;
+    left: 0;
   }
+  /*  */
+   .backdrop {
+    display: flex;
+    position:absolute;
+    align-items: center;
+    padding: 27px 0;
+    bottom: 0;
+    width: 370px;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+
+  } 
+  /* .backdrop  */
+  .backdrop-text {
+   
+    display: flex;
+    width: 370px;
+    justify-content: space-around;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+
+  .backdrop-title {
+    /* position: absolute; */
+    /* width: 156px;
+    height: 16px;
+    left: 322px;
+    top: 1459px; */
+  
+    /* font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 27px 107px;
+
+  } */
+  
+}
   
   /* НАША КОМАНДА */
   .section {
     padding-bottom: 94px;
   }
+  
   .section-name {
     min-width: 1200px;
     background-color: #F5F4FA;
